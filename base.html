@@ -1,0 +1,51 @@
+<!-- templates/diagnosis.html -->
+{% extends "base.html" %}
+{% block title %}Skin Diagnosis{% endblock %}
+
+{% block content %}
+<div class="diagnosis-container">
+    <h2 class="text-center mb-4">Skin Type Diagnosis</h2>
+    
+    <form method="POST" class="skin-diagnosis-form">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                Oiliness Level
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="oiliness" id="very_oily" value="very_oily" required>
+                        <label class="form-check-label" for="very_oily">
+                            Very Oily (Shine appears within an hour of washing)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="oiliness" id="combination" value="combination">
+                        <label class="form-check-label" for="combination">
+                            Combination (Oily T-zone, normal/dry cheeks)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="oiliness" id="normal" value="normal">
+                        <label class="form-check-label" for="normal">
+                            Normal (Balanced, no extreme dryness or oiliness)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="oiliness" id="dry" value="dry">
+                        <label class="form-check-label" for="dry">
+                            Dry (Feels tight, may flake)
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More symptom sections (acne, pores, sensitivity, etc.) -->
+        
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Diagnose My Skin</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
