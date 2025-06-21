@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #f8f9fc;
+    --accent-color: #2e59d9;
+    --text-color: #5a5c69;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    background-color: #f8f9fc;
+}
+
+.navbar {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.diagnosis-container {
+    background: white;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skin-diagnosis-form .card {
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 0.15rem 0.5rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.skin-diagnosis-form .card-header {
+    font-weight: 600;
+}
+
+.form-check {
+    margin-bottom: 0.5rem;
+}
+
+.results-card {
+    background: white;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skin-type-badge {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.recommendation-item {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border-left: 0.25rem solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .diagnosis-container, .results-card {
+        padding: 1rem;
+    }
+}
